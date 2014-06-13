@@ -15,7 +15,7 @@ if sys.version_info < (2, 7):
 
 setup(
     name='csvkit',
-    version='0.7.3',
+    version='0.7.4-SNAPSHOT',
     description='A library of utilities for working with CSV, the king of tabular file formats.',
     long_description=open('README').read(),
     author='Christopher Groskopf',
@@ -56,7 +56,8 @@ setup(
             'csvstack = csvkit.utilities.csvstack:launch_new_instance',
             'csvstat = csvkit.utilities.csvstat:launch_new_instance',
             'in2csv = csvkit.utilities.in2csv:launch_new_instance',
-            'sql2csv = csvkit.utilities.sql2csv:launch_new_instance'
+            'sql2csv = csvkit.utilities.sql2csv:launch_new_instance',
+            'csvargs = csvkit.utilities.csvargs:launch_new_instance'
         ]
     },
     install_requires = install_requires

@@ -4,7 +4,7 @@
 csvargs 
 """
 
-import itertools, os
+import itertools, subprocess
 
 from csvkit import CSVKitReader, CSVKitWriter
 from csvkit.cli import CSVKitUtility
@@ -57,7 +57,7 @@ class CSVArgs(CSVKitUtility):
                 raw_command = raw_command.replace("__", col, 1)
 
             # print raw_command
-            os.system(raw_command)
+            subprocess.call(raw_command)
                 
 def launch_new_instance():
     utility = CSVArgs()
